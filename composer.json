@@ -1,0 +1,17 @@
+{
+    "name": "nxu/natasha-commander",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nxu",
+            "email": "nxu@nxu.hu"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nxu\\Natasha\\": "Natasha/"
+        }
+    }
+}
