@@ -39,7 +39,9 @@ class CommandRunner
                 throw new \InvalidArgumentException("$class is not an instance of Nxu\\Natasha\\Commands\\Command");
             }
 
-            $command->execute($input);
+            if ($command->canHandle($input)) {
+                $command->execute($input);
+            }
         }
     }
 }
